@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.translate.TranslateFragment">
+
+    <Spinner
+        android:id="@+id/translate_from"
+        android:layout_width="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/translate_from_and_to_text_size"
+        android:layout_toStartOf="@id/translate_swap"
+        android:layout_height="wrap_content"
+        android:entries="@array/language_from_entries" />
+
+    <ImageButton
+        android:id="@+id/translate_swap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_alignBottom="@id/translate_from"
+        android:layout_alignTop="@id/translate_from"
+        android:src="@drawable/swap_24" />
+
+    <Spinner
+        android:id="@+id/translate_to"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_toEndOf="@id/translate_swap"
+        android:textSize="@dimen/translate_from_and_to_text_size"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:entries="@array/language_to_entries" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_below="@id/translate_swap"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/translate_button"
+        android:hint="@string/translate_input_hint">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="35dp"
+            android:gravity="top"
+            android:inputType="textMultiLine" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/clear_text"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/text_input_layout"
+        android:layout_alignEnd="@id/text_input_layout"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="3dp"
+        android:src="@drawable/outline_cancel_24"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/turn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/translate_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:visibility="invisible"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/baseline_arrow_back_24" />
+
+    <Button
+        android:id="@+id/translate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/text_input_layout"
+        android:layout_alignParentEnd="true"
+        android:text="@string/translate"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/history_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/translate_button"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/history_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/please_login_to_use_history" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/history_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/translate_result_card"
+        android:layout_width="match_parent"
+        android:layout_below="@id/translate_button"
+        android:background="?attr/colorSurfaceVariant"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/translate_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="@dimen/word_mean_size" />
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

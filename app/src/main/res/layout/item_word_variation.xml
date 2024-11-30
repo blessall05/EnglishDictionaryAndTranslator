@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/word_pl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/word_plural_label"
+            android:textSize="@dimen/word_variation_size" />
+
+        <TextView
+            android:id="@+id/word_pl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/word_variation_size"
+            tools:text="men" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/word_third_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/word_third_label"
+            android:textSize="@dimen/word_variation_size" />
+
+        <TextView
+            android:id="@+id/word_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/word_variation_size"
+            tools:text="does" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/word_past_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/word_past_label"
+            android:textSize="@dimen/word_variation_size" />
+
+        <TextView
+            android:id="@+id/word_past"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/word_variation_size"
+            tools:text="did" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/word_done_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/word_done_label"
+            android:textSize="@dimen/word_variation_size" />
+
+        <TextView
+            android:id="@+id/word_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/word_variation_size"
+            tools:text="done" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/word_ing_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/word_ing_label"
+            android:textSize="@dimen/word_variation_size" />
+
+        <TextView
+            android:id="@+id/word_ing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/word_variation_size"
+            tools:text="doing" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/word_er_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/word_er_label"
+            android:textSize="@dimen/word_variation_size" />
+
+        <TextView
+            android:id="@+id/word_er"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/word_variation_size"
+            tools:text="better" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/word_est_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/word_est_label"
+            android:textSize="@dimen/word_variation_size" />
+
+        <TextView
+            android:id="@+id/word_est"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/word_variation_size"
+            tools:text="best" />
+    </LinearLayout>
+</LinearLayout>

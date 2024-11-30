@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/part"
+        android:layout_width="45dp"
+        android:textSize="@dimen/word_mean_size"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        tools:text="n." />
+
+    <TextView
+        android:id="@+id/means"
+        android:layout_width="0dp"
+        android:layout_toEndOf="@id/part"
+        android:textSize="@dimen/word_mean_size"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        tools:text="意思" />
+
+</RelativeLayout>

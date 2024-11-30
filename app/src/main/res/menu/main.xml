@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.blessall05.translator.view.MainActivity">
+    <item
+        android:id="@+id/word_book"
+        android:title="@string/word_book"
+        android:icon="@drawable/word_book_24"
+        app:showAsAction="ifRoom" />
+</menu>

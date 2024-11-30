@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="word_variation_size">20sp</dimen>
+    <dimen name="word_mean_size">18sp</dimen>
+    <dimen name="search_word_size">25sp</dimen>
+    <dimen name="translate_from_and_to_text_size">20sp</dimen>
+</resources>

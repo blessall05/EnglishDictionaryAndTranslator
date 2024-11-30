@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        tools:context=".view.home.HomeFragment">
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="70dp"
+            android:src="@drawable/person_24"
+            android:layout_alignTop="@id/user_name"
+            android:layout_alignBottom="@id/play_sound"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:text="@string/click_to_login"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/user_icon"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/chinese"
+            android:layout_width="wrap_content"
+            android:text="每日一句！"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/user_name"
+            android:layout_toEndOf="@id/user_icon"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/play_sound"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/chinese"
+            android:layout_toEndOf="@id/user_icon"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/english"
+                android:layout_width="wrap_content"
+                android:text="One sentence a day!"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/play_sound"-->
+        <!--            android:layout_margin="5dp"-->
+        <!--            android:layout_width="35dp"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:layout_toEndOf="@id/english"-->
+        <!--            android:layout_alignTop="@id/chinese"-->
+        <!--            android:layout_alignBottom="@id/english"-->
+        <!--            android:src="@drawable/brand_awareness_24"-->
+        <!--            android:background="?attr/selectableItemBackgroundBorderless" />-->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/picture_card"
+            android:layout_width="match_parent"
+            android:layout_below="@id/play_sound"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                tools:layout_height="500dp" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+</ScrollView>

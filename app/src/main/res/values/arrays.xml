@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="language_from_values">
+        <item>auto</item>
+        <item>zh</item>
+        <item>en</item>
+        <item>jp</item>
+        <item>kor</item>
+        <item>fra</item>
+        <item>ru</item>
+        <item>spa</item>
+        <item>pt</item>
+        <item>de</item>
+        <item>ara</item>
+        <item>tr</item>
+        <item>it</item>
+        <item>vie</item>
+    </string-array>
+    <string-array name="language_from_entries">
+        <item>自动检测</item>
+        <item>中文</item>
+        <item>英语</item>
+        <item>日语</item>
+        <item>韩语</item>
+        <item>法语</item>
+        <item>俄语</item>
+        <item>西班牙语</item>
+        <item>葡萄牙语</item>
+        <item>德语</item>
+        <item>阿拉伯语</item>
+        <item>土耳其语</item>
+        <item>意大利语</item>
+        <item>越南语</item>
+    </string-array>
+
+    <string-array name="language_to_values">
+        <item>zh</item>
+        <item>en</item>
+        <item>jp</item>
+        <item>kor</item>
+        <item>fra</item>
+        <item>ru</item>
+        <item>spa</item>
+        <item>pt</item>
+        <item>de</item>
+        <item>ara</item>
+        <item>tr</item>
+        <item>it</item>
+        <item>vie</item>
+    </string-array>
+    <string-array name="language_to_entries">
+        <item>中文</item>
+        <item>英语</item>
+        <item>日语</item>
+        <item>韩语</item>
+        <item>法语</item>
+        <item>俄语</item>
+        <item>西班牙语</item>
+        <item>葡萄牙语</item>
+        <item>德语</item>
+        <item>阿拉伯语</item>
+        <item>土耳其语</item>
+        <item>意大利语</item>
+        <item>越南语</item>
+    </string-array>
+</resources>
